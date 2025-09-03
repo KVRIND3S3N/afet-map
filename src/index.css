@@ -66,3 +66,5 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+html, body, #root { height: 100%; margin: 0; background:#0b0d10; }
+.leaflet-container { background:#0b0d10; }
