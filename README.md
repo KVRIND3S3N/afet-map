@@ -8,8 +8,9 @@ Aşağıda **demo**, **kurulum** ve **.env** bilgileri yer alır.
 ## 🔗 Bağlantılar
 - **GitHub Repo:** (https://github.com/KVRIND3S3N/afet-map)
 
+![Arayüz Fotoğrafı](public/arayüz.png)
 
-
+![Harita Arayüzü](public/yol.png)
 ## 🧱 Proje Yapısı
 repo-kök/
 ├─ backend/ # API (Python + Flask)
