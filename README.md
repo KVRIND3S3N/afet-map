@@ -1,5 +1,7 @@
 # SIRIUS – Afet Harita Uygulaması
 
+![SIRIUS Logo](public/SIRIUS.png)
+
 TEKNOFEST Geleceğin Sürdürülebilir Şehirleri Hackathonu için geliştirilmiştir.  
 Aşağıda **demo**, **kurulum** ve **.env** bilgileri yer alır.
 
