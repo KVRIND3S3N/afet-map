@@ -1,0 +1,10 @@
+flask
+fastapi
+uvicorn
+psycopg2
+geopandas
+shapely
+fiona
+rasterio
+pandas
+numpy
