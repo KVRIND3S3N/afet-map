@@ -4,7 +4,6 @@ TEKNOFEST Geleceğin Sürdürülebilir Şehirleri Hackathonu için geliştirilmi
 Aşağıda **demo**, **kurulum** ve **.env** bilgileri yer alır.
 
 ## 🔗 Bağlantılar
-- **Canlı Demo (Frontend):** https://<Vercel/Netlify-URL-in>  
 - **GitHub Repo:** (https://github.com/Furkanyolcu/Sirius)
 
 
