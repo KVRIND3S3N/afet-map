@@ -71,15 +71,36 @@ python app.py
 ## 🗄️ Veritabanı (PostgreSQL + PostGIS)
 
 - Uygulama **PostgreSQL 14+** ve **PostGIS** eklentisi ile çalışır.  
-- Veritabanı adı: `afet` (örnek)  
+- Veritabanı adı: `afet` 
 - Gerekli tablolar:
   - `burn_polys` → yangın alanları (geometry sütunu: `geometry`)
   - `assembly_areas` → toplanma alanları (geometry sütunu: `geometry`)
 
   ### Veri yükleme
 Backend klasöründe veri yüklemek için yardımcı scriptler mevcuttur:
-- `load_burn_polys_to_pg.py` → Yanık alanlarını PostGIS'e yükler  
+- `load_burn_polys_to_pg.py` → Yanık alanlarını PostGIS'e yükler   
 - `csv2geojson_izmir.py` → CSV verisini GeoJSON’a dönüştürür  
+
+## 📂 Veri Kaynakları
+
+Uygulamanın çalışması için PostGIS veritabanında **yanık alanları** ve **toplanma alanları** tablolarının doldurulması gerekir.  
+
+### 🔥 Yanık Alanları (`burn_polys`)
+- Kaynak dosya: `dnbr_5class.tif` (uydu görüntüsünden türetilmiş yanık sınıf rasteri)
+- Adımlar:
+  1. `make_burn_polys.py` scripti ile raster → poligon dönüşümü yapılır.
+  2. `load_burn_polys_to_pg.py` scripti ile poligonlar PostGIS veritabanındaki `burn_polys` tablosuna yüklenir.
+
+### 🏕️ Toplanma Alanları (`assembly_areas`)
+- Kaynak dosya: `toplanma_risk_by_distance.geojson` (veya CSV versiyonu)
+- Adımlar:
+  1. `load_assembly_to_pg.py` scripti ile GeoJSON’daki alanlar PostGIS veritabanındaki `assembly_areas` tablosuna yüklenir.
+
+### 📌 Özet
+- **Gerekli tablolar:**
+  - `burn_polys (geometry, class, …)`
+  - `assembly_areas (geometry, ADI, ILCE, MAHALLE, YOL, KAPINO, …)`
+- Eğer tablolar boş ise backend API uçları boş GeoJSON döndürür (hata değildir).
 
 
 ## ⚙️ Ortam Değişkenleri
