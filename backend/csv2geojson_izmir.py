@@ -4,8 +4,8 @@ import pandas as pd
 import geopandas as gpd
 from shapely.geometry import Point
 
-CSV = r"C:\Users\furka\OneDrive\Masaüstü\afet\data\izmir_toplanma.csv"  # indirdiğin dosya
-OUT = r"C:\Users\furka\OneDrive\Masaüstü\afet\data\izmir_toplanma_alanlari.geojson"
+CSV = r"\izmir_toplanma.csv"  # indirdiğin dosya
+OUT = r"\izmir_toplanma_alanlari.geojson"
 
 # 1) CSV'yi sağlam şekilde oku (çeşitli encoding ve ayraç dene)
 def robust_read_csv(path):

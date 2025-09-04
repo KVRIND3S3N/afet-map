@@ -8,3 +8,6 @@ fiona
 rasterio
 pandas
 numpy
+geopandas
+sqlalchemy
+geoalchemy2

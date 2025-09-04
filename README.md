@@ -69,6 +69,19 @@ cd backend
 pip install -r requirements.txt
 python app.py
 
+## 🗄️ Veritabanı (PostgreSQL + PostGIS)
+
+- Uygulama **PostgreSQL 14+** ve **PostGIS** eklentisi ile çalışır.  
+- Veritabanı adı: `afet` (örnek)  
+- Gerekli tablolar:
+  - `burn_polys` → yangın alanları (geometry sütunu: `geometry`)
+  - `assembly_areas` → toplanma alanları (geometry sütunu: `geometry`)
+
+  ### Veri yükleme
+Backend klasöründe veri yüklemek için yardımcı scriptler mevcuttur:
+- `load_burn_polys_to_pg.py` → Yanık alanlarını PostGIS'e yükler  
+- `csv2geojson_izmir.py` → CSV verisini GeoJSON’a dönüştürür  
+
 
 ## ⚙️ Ortam Değişkenleri
 
