@@ -13,10 +13,15 @@ Aşağıda **demo**, **kurulum** ve **.env** bilgileri yer alır.
 ![Harita Arayüzü](public/yol.png)
 ## 🧱 Proje Yapısı
 repo-kök/
+
 ├─ backend/ # API (Python + Flask)
+
 ├─ public/ # statik dosyalar (ör. SIRIUS.png)
+
 ├─ src/ # frontend (Vite + React)
+
 ├─ index.html
+
 ├─ package.json # Vite React için
 
 
