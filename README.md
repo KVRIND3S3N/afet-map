@@ -106,14 +106,13 @@ Frontend şu uçları çağırır:
 ```bash
 npm install
 npm run dev
-
----
-
+```
 ### Backend (Python + Flask)
-
+```bash
 cd backend
 pip install -r requirements.txt
 python app.py
+```
 
 ## 🗄️ Veritabanı (PostgreSQL + PostGIS)
 
