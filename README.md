@@ -12,19 +12,58 @@ Aşağıda **demo**, **kurulum** ve **.env** bilgileri yer alır.
 
 ![Harita Arayüzü](public/yol.png)
 ## 🧱 Proje Yapısı
-repo-kök/
 
-├─ backend/ # API (Python + Flask)
-
-├─ public/ # statik dosyalar (ör. SIRIUS.png)
-
-├─ src/ # frontend (Vite + React)
-
-├─ index.html
-
-├─ package.json # Vite React için
-
-
+```bash
+afet-map/
+├── backend/                  # API (Python + Flask)
+│   ├── data/                 # Veri setleri
+│   │   ├── dnbr_5class.tif
+│   │   ├── izmir_toplanma.csv
+│   │   └── izmir_toplanma_alanlari.geojson
+│   ├── outputs/              # Çıktılar
+│   │   ├── verify/
+│   │   │   ├── dnbr_classes_5.png
+│   │   │   ├── dnbr_hist.png
+│   │   │   └── nbr_before_after.png
+│   │   ├── burn_polys.gpkg
+│   │   ├── dnbr_5class.tif
+│   │   ├── dnbr_5class_quicklook.png
+│   │   ├── risk_distance_full.png
+│   │   ├── risk_distance_zoom.png
+│   │   ├── toplanma_risk_by_distance.csv
+│   │   └── toplanma_risk_by_distance.geojson
+│   ├── .env.example
+│   ├── app.py
+│   ├── csv2geojson_izmir.py
+│   ├── dnbr.py
+│   ├── dnbr_old.py
+│   ├── intersect.py
+│   ├── load_assembly_to_pg.py
+│   ├── load_burn_polys_to_pg.py
+│   ├── make_burn_polys.py
+│   ├── requirements.txt
+│   ├── verify_dnbr.py
+│   └── visualize.py
+├── public/                   # Statik dosyalar
+│   ├── SIRIUS.png
+│   ├── arayüz.png
+│   ├── vite.svg
+│   └── yol.png
+├── src/                      # Frontend (Vite + React)
+│   ├── assets/
+│   │   └── react.svg
+│   ├── App.css
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+├── .gitignore
+├── README.md
+├── eslint.config.js
+├── index.html
+├── package-lock.json
+├── package.json              # Vite + React bağımlılıkları
+└── vite.config.js
+```
 ---
 
 ## ✨ Özellikler
