@@ -4,7 +4,7 @@ TEKNOFEST Geleceğin Sürdürülebilir Şehirleri Hackathonu için geliştirilmi
 Aşağıda **demo**, **kurulum** ve **.env** bilgileri yer alır.
 
 ## 🔗 Bağlantılar
-- **GitHub Repo:** (https://github.com/Furkanyolcu/Sirius)
+- **GitHub Repo:** (https://github.com/KVRIND3S3N/afet-map)
 
 
 
